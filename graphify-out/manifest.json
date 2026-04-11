@@ -1,0 +1,21 @@
+{
+  "next.config.js": 1775845984.7626112,
+  "next-env.d.ts": 1775175484.689009,
+  "tailwind.config.ts": 1775845984.7596347,
+  "postcss.config.js": 1775845984.762326,
+  "app/layout.tsx": 1775845984.759644,
+  "app/page.tsx": 1775845984.7624938,
+  "components/Projects.tsx": 1775845984.7623188,
+  "components/ActionWord.tsx": 1775845984.8094156,
+  "components/HalftoneOverlay.tsx": 1775845984.7625148,
+  "components/Contact.tsx": 1775845984.7624478,
+  "components/ProjectCard.tsx": 1775845984.7623336,
+  "components/OriginStory.tsx": 1775845984.7623105,
+  "components/SplashHero.tsx": 1775845984.7596605,
+  "components/SoundEffect.tsx": 1775845984.7596157,
+  "components/Skills.tsx": 1775845984.7625413,
+  "components/ComicPanel.tsx": 1775845984.7623413,
+  "components/PowerBar.tsx": 1775845984.7596247,
+  "lib/gsap.ts": 1775845984.7625632,
+  "README.md": 1775845984.7596061
+}
