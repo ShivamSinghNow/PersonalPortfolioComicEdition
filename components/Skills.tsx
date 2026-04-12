@@ -5,23 +5,41 @@ import { gsap } from "@/lib/gsap";
 import CaptionBox from "./CaptionBox";
 import PowerBar from "./PowerBar";
 
-const STATS = [
-  { label: "REACT / NEXT.JS",       level: 92, color: "#00D4FF" },
-  { label: "TYPESCRIPT",             level: 88, color: "#00D4FF" },
-  { label: "NODE.JS / EXPRESS",      level: 85, color: "#00D4FF" },
-  { label: "PYTHON / FASTAPI",       level: 80, color: "#FFD700" },
-  { label: "POSTGRESQL / MONGODB",   level: 78, color: "#FFD700" },
-  { label: "AWS / CLOUD",            level: 72, color: "#FFD700" },
-  { label: "UI / UX DESIGN",         level: 75, color: "#FF3333" },
-  { label: "GIT / CI-CD / DEVOPS",   level: 82, color: "#FF3333" },
-  { label: "SYSTEM DESIGN",          level: 70, color: "#FF3333" },
+const CATEGORIES = [
+  {
+    name: "ML & AI",
+    color: "#FFD700",
+    stats: [
+      { label: "PYTHON",                level: 95 },
+      { label: "PYTORCH / TENSORFLOW",  level: 88 },
+      { label: "LANGCHAIN / LANGGRAPH", level: 90 },
+    ],
+  },
+  {
+    name: "FRAMEWORKS & DATA",
+    color: "#00D4FF",
+    stats: [
+      { label: "NEXT.JS / TYPESCRIPT",     level: 85 },
+      { label: "SQL (POSTGRES / SQLITE)",   level: 82 },
+      { label: "RAG / VECTOR DATABASES",    level: 88 },
+    ],
+  },
+  {
+    name: "INFRASTRUCTURE",
+    color: "#FF3333",
+    stats: [
+      { label: "AWS (LAMBDA, EC2, S3)",       level: 75 },
+      { label: "DOCKER / GIT / DEVOPS",       level: 80 },
+      { label: "FASTAPI / FLASK / STREAMLIT", level: 85 },
+    ],
+  },
 ];
 
 const MOVES = [
-  { name: "INFINITE SCROLL",   desc: "Full-stack app from idea to production" },
-  { name: "DEBUG VISION",      desc: "Root cause in minutes, not hours"       },
-  { name: "API FUSION",        desc: "Connects any service to any service"    },
-  { name: "PERF BOOST",        desc: "Sub-second load times — always"         },
+  { name: "AGENT ARCHITECT",   desc: "Multi-agent LLM systems from scratch"   },
+  { name: "RAG MASTERY",       desc: "Sub-2s retrieval, 95%+ relevance"       },
+  { name: "PIPELINE FORGE",    desc: "End-to-end ML pipelines, production-grade" },
+  { name: "FULL-STACK DEPLOY", desc: "Idea → shipped app with real users"     },
 ];
 
 export default function Skills() {
@@ -60,7 +78,7 @@ export default function Skills() {
       {/* Chapter heading */}
       <div className="mb-4 md:mb-5 text-center">
         <h2 className="comic-heading font-bangers text-comic-cyan text-4xl md:text-5xl lg:text-6xl">
-          CHAPTER 3: POWER STATS
+          CHAPTER 4: POWER STATS
         </h2>
       </div>
 
@@ -100,7 +118,7 @@ export default function Skills() {
                   SHIVAM SINGH
                 </div>
                 <div className="font-comic text-comic-paper/50 text-xs mt-0.5">
-                  CLASS: FULL-STACK DEV
+                  CLASS: AI/ML ENGINEER
                 </div>
               </div>
 
@@ -111,9 +129,9 @@ export default function Skills() {
               >
                 {[
                   ["LEVEL",      <span className="text-comic-yellow font-bangers" key="l">MAX</span>],
-                  ["EXPERIENCE", <span className="text-comic-cyan font-bangers"   key="e">+5 YRS</span>],
+                  ["EDUCATION",  <span className="text-comic-cyan font-bangers"   key="e">UCSB &apos;26</span>],
                   ["ALIGNMENT",  <span className="text-comic-paper font-bangers"  key="a">CHAOTIC GOOD</span>],
-                  ["ROLE TYPE",  <span className="text-comic-red font-bangers"    key="r">BUILDER</span>],
+                  ["ROLE TYPE",  <span className="text-comic-red font-bangers"    key="r">RESEARCHER &amp; BUILDER</span>],
                 ].map(([key, val]) => (
                   <div key={key as string} className="flex justify-between items-center">
                     <span>{key}</span>
@@ -157,9 +175,27 @@ export default function Skills() {
           <CaptionBox text="POWER LEVEL ANALYSIS — TOP SECRET" variant="red" />
 
           <div className="flex-1 p-5 md:p-6 md:p-7 bg-comic-paper">
-            <div className="space-y-3 md:space-y-4">
-              {STATS.map((s) => (
-                <PowerBar key={s.label} {...s} />
+            <div className="space-y-6">
+              {CATEGORIES.map((cat) => (
+                <div key={cat.name}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div
+                      className="w-3 h-3 border-2 border-comic-black flex-shrink-0"
+                      style={{ background: cat.color, boxShadow: "1px 1px 0 #000" }}
+                    />
+                    <h3
+                      className="font-bangers text-sm md:text-base tracking-widest text-comic-black/80 uppercase"
+                      style={{ borderBottom: `2px solid ${cat.color}`, paddingBottom: "2px" }}
+                    >
+                      {cat.name}
+                    </h3>
+                  </div>
+                  <div className="space-y-3 md:space-y-4">
+                    {cat.stats.map((s) => (
+                      <PowerBar key={s.label} label={s.label} level={s.level} color={cat.color} />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>

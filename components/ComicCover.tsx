@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const TECH = ["REACT", "NEXT.JS", "NODE.JS", "PYTHON", "TYPESCRIPT", "AWS"];
+const TECH = ["PYTHON", "PYTORCH", "LANGCHAIN", "NEXT.JS", "TYPESCRIPT", "AWS"];
 
 export default function ComicCover() {
   return (
@@ -134,7 +134,7 @@ export default function ComicCover() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.4 }}
           >
-            FULL-STACK DEVELOPER&nbsp;&nbsp;•&nbsp;&nbsp;CREATIVE CODER
+            AI / ML ENGINEER&nbsp;&nbsp;•&nbsp;&nbsp;FULL-STACK DEVELOPER
           </motion.div>
 
           {/* Tech badges */}
@@ -184,11 +184,11 @@ export default function ComicCover() {
                    flex items-center justify-between px-4 md:px-6 py-2 z-20"
       >
         <span className="font-bangers text-comic-black tracking-widest text-xs md:text-sm">
-          &ldquo;THE MOST EXCITING DEVELOPER IN PRINT&rdquo;
+          &ldquo;THE MOST EXCITING ML ENGINEER IN PRINT&rdquo;
         </span>
         <span className="text-comic-black text-sm md:text-base tracking-widest">★★★★★</span>
         <span className="font-comic text-comic-black text-xs hidden sm:block">
-          MARVEL AT THE PIXELS
+          UCSB &apos;26 — STATS &amp; DATA SCIENCE
         </span>
       </div>
     </section>

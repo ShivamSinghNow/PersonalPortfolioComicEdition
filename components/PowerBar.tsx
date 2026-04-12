@@ -37,9 +37,9 @@ export default function PowerBar({ label, level, color }: PowerBarProps) {
   }, [level]);
 
   return (
-    <div ref={barRef} className="mb-6">
+    <div ref={barRef}>
       <div className="flex justify-between items-center mb-2">
-        <span className="font-bangers text-lg md:text-xl text-comic-paper tracking-wider">
+        <span className="font-bangers text-lg md:text-xl text-comic-black tracking-wider">
           {label}
         </span>
         <span

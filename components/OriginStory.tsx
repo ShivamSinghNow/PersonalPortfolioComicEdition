@@ -75,7 +75,7 @@ export default function OriginStory() {
           className="md:col-span-2 md:row-span-2 comic-panel flex flex-col gpu"
           style={{ minHeight: 380 }}
         >
-          <CaptionBox text="SOMEWHERE IN CYBERSPACE… A HERO EMERGES" variant="black" />
+          <CaptionBox text="SOMEWHERE IN SANTA BARBARA… A HERO EMERGES" variant="black" />
 
           {/* Art area — dark bg with action lines */}
           <div className="relative flex-1 bg-comic-bg overflow-hidden flex items-center justify-center p-6 md:p-10">
@@ -112,9 +112,9 @@ export default function OriginStory() {
               <div className="relative bg-comic-paper border-4 border-comic-black rounded-2xl p-4 md:p-6 mx-auto max-w-xs md:max-w-sm text-left"
                 style={{ boxShadow: "4px 4px 0 #000" }}>
                 <p className="font-comic text-sm md:text-base text-comic-black leading-relaxed">
-                  &ldquo;I don&apos;t just write code — I&nbsp;
-                  <strong>craft experiences</strong>
-                  &nbsp;that people remember.&rdquo;
+                  &ldquo;I don&apos;t just build models — I&nbsp;
+                  <strong>engineer intelligent systems</strong>
+                  &nbsp;that solve real problems.&rdquo;
                 </p>
                 {/* Tail pointing down-left */}
                 <div
@@ -137,7 +137,7 @@ export default function OriginStory() {
           </div>
 
           <CaptionBox
-            text="Full-stack developer crafting high-performance web experiences."
+            text="AI/ML engineer & full-stack developer building intelligent systems."
             variant="yellow"
             position="bottom"
           />
@@ -155,9 +155,9 @@ export default function OriginStory() {
               CHAPTER ONE
             </h3>
             <p className="font-comic text-sm md:text-base text-comic-black/80 leading-relaxed">
-              It started with curiosity. A kid who wanted to know{" "}
-              <em>how things worked</em>. A broken laptop became the first
-              battleground — and the first classroom.
+              It started at <em>UC Santa Barbara</em> — a Statistics &amp;
+              Data Science major who fell in love with the math behind
+              machine learning and never looked back.
             </p>
           </div>
         </div>
@@ -174,9 +174,9 @@ export default function OriginStory() {
               THE TRAINING ARC
             </h3>
             <p className="font-comic text-sm md:text-base text-comic-black/80 leading-relaxed">
-              CS degree. Side projects at 2&nbsp;am. Hackathons. Internships.
-              Every challenge forged a stronger skill set and a deeper love for
-              building things that matter.
+              ML research at two UCSB labs. An AI/ML internship at MaiHealth.
+              NeurIPS reviewer. Multi-agent systems at 2&nbsp;am. Every
+              challenge forged a sharper mind and a deeper stack.
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ export default function OriginStory() {
           </span>
           <p className="font-bangers text-comic-yellow text-base md:text-xl xl:text-2xl tracking-wide leading-snug">
             NOW ARMED WITH THE FULL STACK —&nbsp;
-            REACT &bull; NODE.JS &bull; PYTHON &bull; TYPESCRIPT &bull; AWS &bull; POSTGRESQL
+            PYTORCH &bull; LANGCHAIN &bull; NEXT.JS &bull; TYPESCRIPT &bull; PYTHON &bull; AWS
           </p>
           <span className="font-bangers text-comic-yellow text-3xl md:text-5xl opacity-25 flex-shrink-0 ml-auto">
             →

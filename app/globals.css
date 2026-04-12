@@ -11,6 +11,11 @@
     background-color: #0a0a1a;
     color: #fffef0;
     overflow-x: hidden;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='10' stroke='%23FFD700' stroke-width='2'/%3E%3Cpath d='M12 2 C12 2 12 12 12 12' stroke='%23FFD700' stroke-width='1.5'/%3E%3Cpath d='M12 12 L5.5 5' stroke='%23FFD700' stroke-width='1' opacity='.7'/%3E%3Cpath d='M12 12 L18.5 5' stroke='%23FFD700' stroke-width='1' opacity='.7'/%3E%3Cpath d='M12 12 L3 9' stroke='%23FFD700' stroke-width='1' opacity='.5'/%3E%3Cpath d='M12 12 L21 9' stroke='%23FFD700' stroke-width='1' opacity='.5'/%3E%3Cpath d='M12 12 L4 15' stroke='%23FFD700' stroke-width='1' opacity='.5'/%3E%3Cpath d='M12 12 L20 15' stroke='%23FFD700' stroke-width='1' opacity='.5'/%3E%3Cpath d='M12 12 L7 20' stroke='%23FFD700' stroke-width='1' opacity='.6'/%3E%3Cpath d='M12 12 L17 20' stroke='%23FFD700' stroke-width='1' opacity='.6'/%3E%3Cpath d='M12 12 L12 22' stroke='%23FFD700' stroke-width='1.5'/%3E%3Ccircle cx='12' cy='12' r='2' fill='%23FFD700'/%3E%3Cpath d='M5.5 5 Q8 3.5 12 2 Q16 3.5 18.5 5' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.5'/%3E%3Cpath d='M3 9 Q4.5 7 5.5 5' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M18.5 5 Q19.5 7 21 9' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M3 9 Q3.2 12 4 15' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.35'/%3E%3Cpath d='M21 9 Q20.8 12 20 15' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.35'/%3E%3Cpath d='M4 15 Q5.5 17.5 7 20' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M20 15 Q18.5 17.5 17 20' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M7 20 Q9.5 21.5 12 22 Q14.5 21.5 17 20' stroke='%23FFD700' stroke-width='.8' fill='none' opacity='.5'/%3E%3C/svg%3E") 12 12, crosshair;
+  }
+
+  a, button, [role="button"], .comic-btn, .comic-panel-hover, input[type="submit"] {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Ccircle cx='14' cy='14' r='12' stroke='%23FF3333' stroke-width='2'/%3E%3Ccircle cx='14' cy='14' r='2.5' fill='%23FF3333'/%3E%3Cpath d='M14 2 L14 14' stroke='%23FF3333' stroke-width='1.5'/%3E%3Cpath d='M14 14 L6 4.5' stroke='%23FF3333' stroke-width='1' opacity='.7'/%3E%3Cpath d='M14 14 L22 4.5' stroke='%23FF3333' stroke-width='1' opacity='.7'/%3E%3Cpath d='M14 14 L2.5 10' stroke='%23FF3333' stroke-width='1' opacity='.5'/%3E%3Cpath d='M14 14 L25.5 10' stroke='%23FF3333' stroke-width='1' opacity='.5'/%3E%3Cpath d='M14 14 L4 19' stroke='%23FF3333' stroke-width='1' opacity='.5'/%3E%3Cpath d='M14 14 L24 19' stroke='%23FF3333' stroke-width='1' opacity='.5'/%3E%3Cpath d='M14 14 L8 25' stroke='%23FF3333' stroke-width='1' opacity='.6'/%3E%3Cpath d='M14 14 L20 25' stroke='%23FF3333' stroke-width='1' opacity='.6'/%3E%3Cpath d='M14 14 L14 26' stroke='%23FF3333' stroke-width='1.5'/%3E%3Cpath d='M6 4.5 Q10 3 14 2 Q18 3 22 4.5' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.5'/%3E%3Cpath d='M2.5 10 Q4 7 6 4.5' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M22 4.5 Q24 7 25.5 10' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M2.5 10 Q3 14 4 19' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.35'/%3E%3Cpath d='M25.5 10 Q25 14 24 19' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.35'/%3E%3Cpath d='M4 19 Q6 22 8 25' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M24 19 Q22 22 20 25' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.4'/%3E%3Cpath d='M8 25 Q11 26.5 14 26 Q17 26.5 20 25' stroke='%23FF3333' stroke-width='.8' fill='none' opacity='.5'/%3E%3C/svg%3E") 14 14, pointer;
   }
 
   ::selection {
@@ -205,7 +210,8 @@
   /* ─── Power bars ────────────────────────────── */
 
   .power-bar-container {
-    @apply border-4 border-comic-black bg-comic-black/20 h-8 md:h-10 relative overflow-hidden;
+    @apply border-4 border-comic-black h-8 md:h-10 relative overflow-hidden;
+    background-color: #e8e5d4;
     box-shadow: 3px 3px 0px #000000;
   }
 

@@ -1,6 +1,7 @@
 import ComicCover   from "@/components/ComicCover";
 import OriginStory  from "@/components/OriginStory";
 import Projects     from "@/components/Projects";
+import Writings     from "@/components/Writings";
 import Skills       from "@/components/Skills";
 import Contact      from "@/components/Contact";
 import PageBreak    from "@/components/PageBreak";
@@ -53,7 +54,22 @@ export default function Home() {
         />
       </div>
 
-      <PageBreak pageNumber={4} label="CHAPTER THREE: POWER STATS" />
+      <PageBreak pageNumber={4} label="CHAPTER THREE: INTEL FILES" />
+
+      {/* ── Writings ──────────────────────────── */}
+      <Writings />
+
+      {/* SFX break */}
+      <div className="relative h-0">
+        <SoundEffect
+          text="BZZT!"
+          color="#BF5FFF"
+          rotation={-4}
+          className="right-[5%] -top-10 md:right-[10%] md:-top-14"
+        />
+      </div>
+
+      <PageBreak pageNumber={5} label="CHAPTER FOUR: POWER STATS" />
 
       {/* ── Skills ────────────────────────────── */}
       <Skills />
@@ -68,7 +84,7 @@ export default function Home() {
         />
       </div>
 
-      <PageBreak pageNumber={5} label="EPILOGUE: SIGN OFF" />
+      <PageBreak pageNumber={6} label="EPILOGUE: SIGN OFF" />
 
       {/* ── Contact ───────────────────────────── */}
       <Contact />

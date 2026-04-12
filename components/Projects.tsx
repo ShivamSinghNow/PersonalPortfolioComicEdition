@@ -6,75 +6,87 @@ import CaptionBox from "./CaptionBox";
 
 const PROJECTS = [
   {
-    title: "CYBER SENTINEL",
-    subtitle: "Real-Time Dashboard",
+    title: "TRIBEMAP",
+    subtitle: "Brain Response Prediction",
     description:
-      "A real-time threat-detection dashboard built with Next.js and WebSockets. Monitors network traffic and visualises anomalies at blazing speed.",
-    tags: ["Next.js", "WebSocket", "D3.js"],
-    accent: "#FFD700",
-    bg: "#141000",
+      "Predicts how the human brain responds to any image, video, or text using Meta's TRIBE v2 model. 20,484 cortical vertices visualized in real time via Three.js, powered by a trimodal encoding pipeline (V-JEPA2, Wav2Vec-BERT, LLaMA 3.2) on Modal GPUs with Claude-generated neural interpretations.",
+    tags: ["TRIBE v2", "Three.js", "Modal", "Claude"],
+    accent: "#BF5FFF",
+    bg: "#0a0014",
     issue: "#1",
-    href: "#",
+    href: "https://tribemap-ten.vercel.app/",
     featured: true,
   },
   {
-    title: "PIXEL FORGE",
-    subtitle: "AI Image Generator",
+    title: "MULTI-AGENT LLM TRADING",
+    subtitle: "Crypto Intelligence System",
     description:
-      "Turns text prompts into comic-style artwork using Stable Diffusion. FastAPI backend, React frontend.",
-    tags: ["Python", "FastAPI", "React"],
-    accent: "#FF3333",
-    bg: "#140000",
+      "End-to-end multi-agent crypto trading system using LangGraph — 8 specialized LLM agents (GPT-4, Claude) via a shared state graph with production-grade data pipelines from YFinance, CoinGecko, Reddit & Binance.",
+    tags: ["LangGraph", "GPT-4", "Claude", "Python"],
+    accent: "#FFD700",
+    bg: "#141000",
     issue: "#2",
-    href: "#",
+    href: "https://github.com/ShivamSinghNow/JainCapitalAgenticTrading",
     featured: false,
   },
   {
-    title: "STACK OVERFLOW",
-    subtitle: "Developer Platform",
+    title: "POWERTRACKER",
+    subtitle: "AI Job Application Tracker",
     description:
-      "Full-stack social platform for devs — real-time collaboration and syntax highlighting.",
-    tags: ["TypeScript", "PostgreSQL", "Redis"],
+      "Full-stack job tracker with AI-driven insights — Next.js 15, TypeScript, Tailwind, Postgres/Prisma, deployed on Vercel with 8 active users.",
+    tags: ["Next.js", "TypeScript", "Prisma", "Anthropic"],
     accent: "#00D4FF",
     bg: "#00101a",
     issue: "#3",
-    href: "#",
+    href: "https://v0-power-tracker.vercel.app/",
     featured: false,
   },
   {
-    title: "QUANTUM QUEST",
-    subtitle: "Browser Game",
+    title: "NEMOLENS",
+    subtitle: "AI Video Study Companion",
     description:
-      "Retro-style browser game with procedurally generated levels and a chiptune soundtrack.",
-    tags: ["Canvas API", "JavaScript"],
-    accent: "#FF6B35",
-    bg: "#140a00",
-    issue: "#4",
-    href: "#",
-    featured: false,
-  },
-  {
-    title: "DATA STORM",
-    subtitle: "CLI Pipeline Tool",
-    description:
-      "Rapid data pipeline prototyping — ingest, transform, and visualise CSV/JSON in seconds.",
-    tags: ["Go", "SQLite"],
+      "Multimodal video analysis pipeline using NVIDIA Nemotron Nano 12B & local Whisper — parallel frame extraction, structured notes, quizzes & a voice assistant. Submitted to NVIDIA GTC 2026.",
+    tags: ["NVIDIA", "Whisper", "Streamlit", "Python"],
     accent: "#39FF14",
     bg: "#001400",
-    issue: "#5",
-    href: "#",
+    issue: "#4",
+    href: "https://github.com/ShivamSinghNow/NemoLens",
     featured: false,
   },
   {
-    title: "ECHO CHAMBER",
-    subtitle: "Encrypted Messaging",
+    title: "CONNECTAI — VR CHARACTERS",
+    subtitle: "UCSB Human-AI Interaction Lab",
     description:
-      "E2E-encrypted messaging with disappearing messages, voice notes, and a custom emoji system.",
-    tags: ["React Native", "Node.js"],
-    accent: "#BF5FFF",
-    bg: "#0a0014",
+      "RAG-based AI character system for a no-code VR platform — Mistral + ChromaDB NPCs with persistent episodic memory and real-time reasoning via JSON-based Unity integration.",
+    tags: ["Mistral", "ChromaDB", "RAG", "Unity"],
+    accent: "#FF3333",
+    bg: "#140000",
+    issue: "#5",
+    href: "https://github.com/ShivamSinghNow",
+    featured: false,
+  },
+  {
+    title: "NEURIPS VISUAL AGENTS",
+    subtitle: "UCSB Bionic Vision Lab",
+    description:
+      "Evaluation infrastructure for NeurIPS 2025 competition benchmarking 50+ visual agents against biological baselines using PyTorch and Weights & Biases.",
+    tags: ["PyTorch", "W&B", "NeurIPS"],
+    accent: "#FF6B35",
+    bg: "#140a00",
     issue: "#6",
-    href: "#",
+    href: "https://robustforaging.github.io/",
+    featured: false,
+  },
+  {
+    title: "MAIHEALTH PIPELINE",
+    subtitle: "Voice-to-FHIR + RAG Chatbot",
+    description:
+      "Voice-to-FHIR pipeline achieving 94% extraction accuracy across 15+ medical entity types. Plus a RAG chatbot with LangChain & ChromaDB querying EHR data with <2s latency.",
+    tags: ["LangChain", "ChromaDB", "FastAPI"],
+    accent: "#FF6B35",
+    bg: "#140a00",
+    issue: "#7",
+    href: "https://github.com/ShivamSinghNow",
     featured: false,
   },
 ];
@@ -115,7 +127,7 @@ export default function Projects() {
 
   const featured = PROJECTS[0];
   const sideTwo  = PROJECTS.slice(1, 3);
-  const bottomFour = PROJECTS.slice(3);
+  const bottomRow = PROJECTS.slice(3);
 
   return (
     <section id="projects" ref={sectionRef} className="comic-page-section">
@@ -200,11 +212,14 @@ export default function Projects() {
           {/* Side panels — stacked */}
           <div className="flex flex-col gap-3 md:gap-4">
             {sideTwo.map((proj, i) => (
-              <div
+              <a
                 key={proj.title}
-                ref={(el) => { cardRefs.current[i + 1] = el; }}
+                href={proj.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                ref={(el) => { cardRefs.current[i + 1] = el as HTMLDivElement | null; }}
                 className="flex-1 border-panel border-comic-black relative overflow-hidden
-                           cursor-pointer group gpu comic-panel-hover"
+                           cursor-pointer group gpu comic-panel-hover block"
                 style={{ background: proj.bg, minHeight: 140, boxShadow: "5px 5px 0 #000" }}
               >
                 <div className="relative z-10 p-4 h-full flex flex-col justify-between">
@@ -235,19 +250,22 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
 
-        {/* Bottom row — 4 equal panels */}
+        {/* Bottom row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-          {bottomFour.map((proj, i) => (
-            <div
+          {bottomRow.map((proj, i) => (
+            <a
               key={proj.title}
-              ref={(el) => { cardRefs.current[i + 3] = el; }}
+              href={proj.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              ref={(el) => { cardRefs.current[i + 3] = el as HTMLDivElement | null; }}
               className="border-panel border-comic-black relative overflow-hidden
-                         cursor-pointer group gpu comic-panel-hover"
+                         cursor-pointer group gpu comic-panel-hover block"
               style={{ background: proj.bg, minHeight: 170, boxShadow: "4px 4px 0 #000" }}
             >
               <div className="relative z-10 p-3 md:p-4 h-full flex flex-col justify-between">
@@ -278,7 +296,7 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

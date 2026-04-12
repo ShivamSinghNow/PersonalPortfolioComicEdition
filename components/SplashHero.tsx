@@ -44,7 +44,7 @@ export default function SplashHero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h1 className="font-bangers text-6xl sm:text-7xl md:text-9xl text-comic-yellow comic-heading mb-4">
-            YOUR NAME
+            SHIVAM SINGH
           </h1>
         </motion.div>
 
@@ -54,7 +54,7 @@ export default function SplashHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          Full-Stack Developer &bull; Creative Coder
+          AI / ML Engineer &bull; Full-Stack Developer
         </motion.p>
 
         <motion.p
@@ -63,8 +63,8 @@ export default function SplashHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          Wielding code like a superpower — crafting digital experiences
-          one commit at a time.
+          Building intelligent systems and shipping products — from
+          multi-agent LLM pipelines to full-stack web apps.
         </motion.p>
 
         <motion.button
