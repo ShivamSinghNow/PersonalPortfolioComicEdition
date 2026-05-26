@@ -20,6 +20,10 @@ const comicNeue = Comic_Neue({
 export const metadata: Metadata = {
   title: "Shivam Singh | Comic Portfolio",
   description: "A scrollable comic book portfolio — AI/ML engineer, full-stack developer, UCSB '26.",
+  icons: {
+    icon: [{ url: "/icon.jpg", type: "image/jpeg" }],
+    apple: [{ url: "/apple-icon.jpg", type: "image/jpeg" }],
+  },
 };
 
 export default function RootLayout({
