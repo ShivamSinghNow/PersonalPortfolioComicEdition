@@ -113,6 +113,18 @@ const PROJECTS = [
     href: "https://drishti-demo.vercel.app/",
     featured: false,
   },
+  {
+    title: "BATTLE ANGEL",
+    subtitle: "Google DeepMind I/O Hackathon",
+    description:
+      "Humanoid disaster-rescue RL agent — PPO policy trained across 8 MuJoCo gym environments on LIDAR, cameras, thermal & accelerometer inputs. Gemini 3.5 Flash generates unseen scenarios on the fly; live Three.js visualization. Built in 6 hours.",
+    tags: ["PPO", "MuJoCo", "Gemini", "Three.js"],
+    accent: "#FF4757",
+    bg: "#140008",
+    issue: "#10",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7465185948897533953/",
+    featured: false,
+  },
 ];
 
 export default function Projects() {
@@ -223,6 +235,8 @@ export default function Projects() {
                 ))}
                 <a
                   href={featured.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="ml-auto font-bangers text-sm px-4 py-1 border-2 border-comic-black
                              bg-comic-paper text-comic-black hover:bg-comic-yellow transition-colors duration-150"
                   style={{ boxShadow: "2px 2px 0 #000" }}
