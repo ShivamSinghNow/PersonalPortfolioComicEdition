@@ -89,6 +89,30 @@ const PROJECTS = [
     href: "https://github.com/ShivamSinghNow",
     featured: false,
   },
+  {
+    title: "SCARTISSUE",
+    subtitle: "Regression Detection for Codebases",
+    description:
+      "Indexes a repo's git history of fixes and warns when a PR is about to reintroduce a regression your team already paid for. MCP server + web UI cross-reference every hunk against known scar patterns.",
+    tags: ["MCP", "GitHub", "Anthropic", "Python"],
+    accent: "#FF4466",
+    bg: "#140008",
+    issue: "#8",
+    href: "https://scartissue.vercel.app/",
+    featured: false,
+  },
+  {
+    title: "DRISHTI",
+    subtitle: "Offline TB Detection",
+    description:
+      "Vision-language chest X-ray screening for clinics without reliable bandwidth. Qwen2-VL fine-tuned on TBX11K with Grad-CAM heatmaps and an offline GGUF path for on-device inference.",
+    tags: ["Qwen2-VL", "Grad-CAM", "GGUF", "Modal"],
+    accent: "#00C9A7",
+    bg: "#001210",
+    issue: "#9",
+    href: "https://drishti-demo.vercel.app/",
+    featured: false,
+  },
 ];
 
 export default function Projects() {
